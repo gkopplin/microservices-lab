@@ -11,17 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RestController
 public class SongsApiApplication {
-
-	@Autowired
-	SongService songService;
-
-	@RequestMapping("/")
-	public String getSongs() {
-//		return songService.getSongs();
-		return "songs";
-	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SongsApiApplication.class, args);
